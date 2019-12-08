@@ -1,0 +1,23 @@
+from array import *
+
+print("Enter some nums for array to sort")
+print("print '0' to stop ")
+
+data=int(input())
+mas=array('i', [data])
+i=1
+while mas[i-1]!=0:
+    mas.insert(i,int(input()))
+    i=i+1
+print("enter the sum number")
+num=int(input())
+flag=0
+for i in range(len(mas)):
+    for j in range(len(mas)):
+        if(mas[i]+mas[j]==num):
+            print(i)
+            print(j)
+            flag=1
+            break
+    if(flag==1):
+        break

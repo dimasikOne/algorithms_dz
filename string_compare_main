@@ -1,0 +1,14 @@
+from array import *
+
+print("input two strings")
+A=input()
+B=input()
+D=[]
+index=0
+for i in A:
+    for j in B:
+        if i==j:
+            D.insert(index,i)
+            index=index+1
+            continue
+print(len(D))
